@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+
+body {
+    font-family: 'Montserrat', arial;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+/* body * {
+    
+} */
+
+img {
+    width: 20px;
+    padding: 5px;
+    height: auto;
+}
+
+.navbar {
+    background: #0d0d0d;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav.link {
+    transition: 0.5s ease;
+}
+
+a:hover {
+    transition: 0.3s ease;
+    color: #f8b849;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #f8b849;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* SEPARAÇÃO * {
+    
+} */
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: #fff;
+    text-decoration: none;   
+}
+
+.left-login > h1 > span.test {
+    color: #f8b849;  
+}
+
+.login-img {
+    width: 32vw;
+}
+
+.main-login {
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: #fff;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d0d0d;
+    flex-direction: column;
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #0000005e;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #31363c;
+    color: #fff;
+    box-shadow: 0 10px 30px #000000;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > input::placeholder {
+    color: #555b61
+}
+
+.textfield > label{
+    color: #fff;
+}
+
+.btn-login {
+    color: #0d0d0d;
+    background: #f8b849;
+    width: 100%;
+    padding: 16px 0px;
+    cursor: pointer;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    box-shadow: 0 2px 30px -12px #f8b849
+}
+
+.btn-login:hover {
+    background: #ffcb71;
+}
+
+
+
+@media only screen and (max-width: 920px) {
+    .card-login {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        transform: translate(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        transform: translate(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border: 0 0 20px 20px;
+        background-color: #0d0d0d;
+        text-align: center;
+        flex-direction: column;
+        width: 80%;
+        transition: 0.3;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }       
+    
+    .nav-menu.active {
+        left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .left-login {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .right-login {
+        width: 80%;
+        height: auto;
+    }
+    
+    .left-login > h1 {
+        display: none;
+    }
+
+    .login-img {
+        width: 50vw;
+    }
+
+}

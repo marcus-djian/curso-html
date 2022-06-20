@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #202020;
+}
+
+header {
+    background: #0d0d0d;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.logo {
+    max-width: 20px;
+    max-height: auto;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff; 
+    transition: 0,3s ease; 
+}
+a:hover {
+    color: #f9b848;
+}
+
+.nav-link {
+    transition: 0.5s ease;
+}
+.nav-link:hover {
+    color: blueviolet;
+}
+
+.hamburguer {
+    display: block;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer:active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer:active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer:active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #0d0d0d;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+}
