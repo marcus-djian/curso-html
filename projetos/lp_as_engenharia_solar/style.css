@@ -8,6 +8,11 @@
     background-color: #1a75bc;
 }
 
+*::selection {
+    color: #1a75bc;
+    background-color: #ffaa4b;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -34,6 +39,20 @@ header > a > img {
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
+}
+
+i {
+    color: #fff;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+i:hover {
+    color: #ffaa4b;
 }
 
 .headerLinks:hover {
@@ -109,14 +128,46 @@ header > a > img {
 }
 
 .secondaryContent {
+    border-bottom: 0.3px solid #ffaa4b;
     color: #fff;
     padding: 30px;
+    text-align: center;
+}
+
+.secondaryContent > h3 {
+    color: #ffaa4b;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.secondaryContent > p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 footer > img {
-    background: #fff;
-    width: 45px;
-    height: 45px;
-    padding: 2px;
-    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+footer > p > a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer p, a {
+    font-size: 0.9em;
+}
+
+footer a:hover {
+    color: #ffaa4b;
 }
