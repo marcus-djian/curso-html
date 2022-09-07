@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,500;0,700;0,800;1,500&display=swap');
+
+* {
+    font-family: 'Exo 2', sans-serif, arial;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1a75bc;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+header > a > img {
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.headerMenu {
+    display: flex;
+    gap: 35px;
+}
+
+.headerLinks {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.headerLinks:hover {
+    color: #ffaa4b;
+    transform: scale(1.1, 1.1);
+}
+
+#orcamento  {
+    background-color: #ffaa4b;
+    color: #1a75bc;
+    border-radius: 8px;
+}
+
+#orcamento:hover {
+    background-color: #fdbe77;
+    transform: scale(1.1, 1.1);
+}
+
+.content {
+    border-top: 0.3px solid #ffaa4b;
+}
+
+.mainContent {
+    border-bottom: 0.3px solid #ffaa4b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.mainContentScripted {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mainContentScripted h1 {
+    color: #ffaa4b;
+    font-size: 2.3em;
+    font-weight: 800;
+}
+
+.mainContentScripted h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.mainContentScripted > a {
+    width: 300px;
+    height: 45px;
+}
+
+.mainContentScripted > a > button {
+    background-color: #ffaa4b;
+    color: #1a75bc;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 300px;
+    height: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mainContentScripted > a > button:hover {
+    background-color: #fdbe77;
+    transform: scale(1.1, 1.1);
+}
+
+.imagemFundo {
+    width: 600px;
+}
+
+.secondaryContent {
+    color: #fff;
+    padding: 30px;
+}
+
+footer > img {
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    padding: 2px;
+    border-radius: 50%;
+}
