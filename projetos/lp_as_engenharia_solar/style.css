@@ -107,6 +107,8 @@ header > a > img {
     transform: scale(1.1, 1.1);
 }
 
+/* conteúdo principal */
+
 .content {
     border-top: 0.3px solid #ffaa4b;
 }
@@ -163,6 +165,8 @@ header > a > img {
     width: 600px;
 }
 
+/* conteúdo secundário */
+
 .secondaryContent {
     border-bottom: 0.3px solid #ffaa4b;
     color: #fff;
@@ -180,6 +184,8 @@ header > a > img {
     margin-bottom: 10px;
     font-size: 1.2em;
 }
+
+/* footer (rodapé) */
 
 footer {
     color: #fff;
