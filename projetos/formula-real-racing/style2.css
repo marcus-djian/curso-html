@@ -1,0 +1,100 @@
+@font-face {
+    font-family: formula1;
+    src: url('fonts/formula1-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: formula1-2;
+    src: url(fonts/formula1-bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: formula1-3;
+    src: url(fonts/formula1-black.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/* Body e afins */
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #1a1a1a;
+    font-family: 'formula1', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.botao {
+    font-family: 'formula1', sans-serif;
+    font-size: 0.8em;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    color: #961617;
+    width: 60px;
+    height: 25px;
+    background-color: #fff;
+    cursor: pointer;
+} 
+
+h2 {
+    font-family: 'formula1-2', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+body p {
+    margin-bottom: 20px;
+}
+
+body a {
+    text-decoration: none;
+    color: #961617;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+/* Lista com Dados */
+
+ul {
+    text-align: center;
+}
+
+.coluna_direita {
+    font-family: 'formula1-2', sans-serif;
+    font-size: 1.2em;
+}
+
+.coluna_direita ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.coluna_direita p {
+    font-family: 'formula1-3', sans-serif;
+    background-image: linear-gradient(45deg,#db2121, #700606) ;
+    font-size: 2.5em;
+    margin-top: 2px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+}
+
+ul p:hover{
+    scale: 1.2;
+}
